@@ -418,7 +418,21 @@ footer .social-icons a i:hover {
 
 @media (max-width: 768px) {
 
+   .features, .testimonials {
+        padding: 40px 20px;
+        height: auto;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
    
+    .features .feature {
+        margin-bottom: 30px;
+        width: 300px;
+    }
+    .testimonials .testimonial {
+        margin-bottom: 30px;
+        width: 290px;
+    }
     .newsletter {
         padding: 40px 20px;
         height: auto;
