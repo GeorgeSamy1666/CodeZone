@@ -170,10 +170,10 @@ header .btn:hover {
     padding: 50px 20px;
     background-color: #181818;
     text-align: center;
-    height: 70vh;
+    height: 80vh;
    display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     
 
 }
@@ -243,10 +243,10 @@ header .btn:hover {
     padding: 50px 20px;
     background-color: #121212;
     text-align: center;
-    height: 70vh;
+    height: 80vh;
    display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 .testimonials h2 {
     font-size: 36px;
