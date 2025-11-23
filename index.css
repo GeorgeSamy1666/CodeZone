@@ -57,10 +57,10 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
-nav a:visited {
+nav a .active{
     color: rgb(0, 204, 109);
 }
-nav a:visited::after {
+nav a .active::after {
     width: 100%;
 }
  .search-box {
