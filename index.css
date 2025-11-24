@@ -100,10 +100,7 @@ nav a:hover::after {
     background-color: #ffffff;
     color: rgb(0, 204, 109);
 }
-.side-bar a:visited {
-    background-color: #000000;
-    color: rgb(238, 255, 0);
-}
+
 
 
 .search-box {
