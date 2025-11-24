@@ -93,6 +93,17 @@ nav a:hover::after {
     cursor: pointer;
     z-index: 999999;
 }
+.side-bar i {
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+.side-bar a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 204, 109);
+}
+.side-bar a:visited {
+    background-color: #000000;
+    color: rgb(238, 255, 0);
+}
 
 
 .search-box {
