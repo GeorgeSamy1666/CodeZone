@@ -36,30 +36,51 @@ function draw() {
 setInterval(draw, 33);
 
 window.addEventListener("resize", () => {
+<<<<<<< HEAD
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   columns = canvas.width / fontSize;
+=======
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    columns = canvas.width / fontSize;
+>>>>>>> f219c7c482d50822a0b2e3234e7de6c7def437a1
 });
 // animation code ends here
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(
+<<<<<<< HEAD
     "header h1, header p, header .btn, .feature, .testimonial, .side-bar a, .newsletter p, .newsletter input, .newsletter .btn, .login-container .container, .register .container, .sec-nav, .course-card, .services-container, .contact-container, .faq, .about, .team-member"
   );
 
   const revealOnScroll = () => {
     elements.forEach((el) => {
+=======
+    "header h1, header p, header .btn, .feature, .testimonial, .side-bar a, .newsletter p, .newsletter input, .newsletter .btn"
+  );
+
+  const revealOnScroll = () => {
+    elements.forEach(el => {
+>>>>>>> f219c7c482d50822a0b2e3234e7de6c7def437a1
       const rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight - 50) {
         el.classList.add("show");
       }
+<<<<<<< HEAD
       else {
         el.classList.remove("show");
       }
+=======
+>>>>>>> f219c7c482d50822a0b2e3234e7de6c7def437a1
     });
   };
 
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
+<<<<<<< HEAD
 });
 document.querySelectorAll(".service-item, .contact-container, .faq, .about, .team-member")
   .forEach(el => el.classList.add("show"));
+=======
+});
+>>>>>>> f219c7c482d50822a0b2e3234e7de6c7def437a1

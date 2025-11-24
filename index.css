@@ -94,8 +94,13 @@ nav a:hover::after {
     cursor: pointer;
     z-index: 999999;
 }
+<<<<<<< HEAD
 .side-bar a {
     transition: color 0.3s ease, background-color 0.3s ease;
+=======
+.side-bar i {
+    transition: color 0.5s ease, background-color 0.5s ease;
+>>>>>>> f219c7c482d50822a0b2e3234e7de6c7def437a1
 }
 .side-bar a:hover {
     background-color: #ffffff;
@@ -620,7 +625,11 @@ header .btn.show {
 .feature {
   opacity: 0;
   transform: translateX(-100%);
+<<<<<<< HEAD
   transition: all 1S ease-in-out;
+=======
+  transition: all 2s ease-out;
+>>>>>>> f219c7c482d50822a0b2e3234e7de6c7def437a1
 }
 
 .feature.show {
@@ -652,7 +661,11 @@ header .btn.show {
 .newsletter .btn {
   opacity: 0;
   transform: translateX(100%); 
+<<<<<<< HEAD
   transition: all 1s ease-in-out;
+=======
+  transition: all 1.5s ease-in-out;
+>>>>>>> f219c7c482d50822a0b2e3234e7de6c7def437a1
 }
 
 .newsletter p.show,
