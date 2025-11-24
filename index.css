@@ -556,6 +556,9 @@ footer .social-icons a i:hover {
         font-size: 22px;
         margin: 0 8px;
     }
+       .newsletter::after{
+        height: 40px;
+    }
 }
 
 
@@ -587,5 +590,9 @@ footer .social-icons a i:hover {
     }
     .newsletter::after{
         height: 30px;
+    }
+    .newsletter .btn{
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
