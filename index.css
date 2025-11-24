@@ -503,7 +503,11 @@ footer .social-icons a i:hover {
     color: rgb(0, 204, 109);
 }
 
-
+@media (max-width: 1024px){
+       .newsletter::after{
+        height: 50px;
+    }
+}
 @media (max-width: 768px) {
 
     .features,
@@ -557,7 +561,7 @@ footer .social-icons a i:hover {
         margin: 0 8px;
     }
        .newsletter::after{
-        height: 40px;
+        height: 20px;
     }
 }
 
