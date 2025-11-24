@@ -8,6 +8,7 @@
 body {
     background-color: #121212;
     color: #ffffff;
+    
 }
 
 .logo {
@@ -251,8 +252,8 @@ header .btn:hover {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-
     position: relative;
+    overflow: hidden;
 }
 
 .features h2 {
@@ -332,6 +333,7 @@ header .btn:hover {
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     position: relative;
+    overflow: hidden;
 }
 .testimonials::after {
     content: "";
@@ -394,6 +396,7 @@ header .btn:hover {
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     position: relative;
+    overflow: hidden;
 }
 
 .newsletter h2 {
@@ -596,4 +599,65 @@ footer .social-icons a i:hover {
         height: 30px;
     }
   
+}
+header h1,
+header p,
+header .btn {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1s ease-out;
+}
+
+
+header h1.show,
+header p.show,
+header .btn.show {
+  opacity: 1;
+  transform: translateY(0);
+    
+}
+
+.feature {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 2s ease-out;
+}
+
+.feature.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.testimonial {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 2s ease-in-out;
+}
+
+.testimonial.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.side-bar a {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1.5s ease-in-out;
+}
+
+.side-bar a.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.newsletter p,
+.newsletter input,
+.newsletter .btn {
+  opacity: 0;
+  transform: translateX(100%); 
+  transition: all 1.5s ease-in-out;
+}
+
+.newsletter p.show,
+.newsletter input.show,
+.newsletter .btn.show {
+  opacity: 1;
+  transform: translateX(0);
 }

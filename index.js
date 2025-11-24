@@ -40,3 +40,21 @@ window.addEventListener("resize", () => {
     canvas.height = window.innerHeight;
     columns = canvas.width / fontSize;
 });
+// animation code ends here
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(
+    "header h1, header p, header .btn, .feature, .testimonial, .side-bar a, .newsletter p, .newsletter input, .newsletter .btn"
+  );
+
+  const revealOnScroll = () => {
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+});
