@@ -41,25 +41,4 @@ window.addEventListener("resize", () => {
   columns = canvas.width / fontSize;
 });
 // animation code ends here
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(
-    "header h1, header p, header .btn, .feature, .testimonial, .side-bar a, .newsletter p, .newsletter input, .newsletter .btn, .login-container .container, .register .container, .sec-nav, .course-card, .services-container, .contact-container, .faq, .about, .team-member"
-  );
 
-  const revealOnScroll = () => {
-    elements.forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 50) {
-        el.classList.add("show");
-      }
-      else {
-        el.classList.remove("show");
-      }
-    });
-  };
-
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll();
-});
-document.querySelectorAll(".service-item, .contact-container, .faq, .about, .team-member")
-  .forEach(el => el.classList.add("show"));
