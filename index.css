@@ -353,7 +353,7 @@ header::after {
 
 @media (max-width:768px) {
     header {
-        padding: 50px 20px 20px 20px;
+        padding: 20px;
     }
 
     .header-content {
@@ -390,7 +390,9 @@ header::after {
     header {
         padding: 20px;
     }
-
+    .header-content {
+        margin-top: 120px;
+    }
     .left h1 {
         font-size: 48px;
     }
@@ -411,6 +413,12 @@ header::after {
     .right img {
         width: 100%;
         height: auto;
+    }
+     .slider {
+        display: none;
+    }
+    header::after{
+        background: linear-gradient(to top, #181818, transparent);
     }
 }
 
