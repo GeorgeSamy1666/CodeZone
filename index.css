@@ -206,6 +206,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .header-content {
@@ -363,7 +364,6 @@ header::after {
 
     .left {
         width: 100%;
-        margin-bottom: 20px;
     }
 
     .left h1 {
@@ -393,7 +393,6 @@ header::after {
 
     .left h1 {
         font-size: 48px;
-        margin-bottom: 20px;
     }
 
     .left p {
