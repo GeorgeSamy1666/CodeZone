@@ -40,5 +40,5 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
   columns = canvas.width / fontSize;
 });
-// animation code ends here
+
 
