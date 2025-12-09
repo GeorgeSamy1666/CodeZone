@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(0, 204, 109) #121212;
+}
+
+.logo {
+    color: rgb(0, 204, 109);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: absolute;
+    margin: 0 auto;
+    gap: 25px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav .active {
+    color: rgb(0, 204, 109);
+}
+
+nav .active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: rgb(0, 177, 94);
+    width: 100%;
+}
+
+nav a:hover {
+    color: rgb(0, 204, 109);
+
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 177, 94);
+    transition: width .3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.search-box {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+.search-box i {
+    font-size: 20px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.search-box input[type="text"]:focus {
+    outline: none;
+    border-color: rgb(0, 204, 109);
+
+}
+
+.search-box input[type="text"]::placeholder {
+    color: #ffffff;
+
+}
+
+.search-box i:hover {
+    color: rgb(0, 204, 109);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .search-box input[type="text"] {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        font-size: 20px;
+    }
+
+    nav li a {
+        font-size: 16px;
+    }
+
+    .search-box input[type="text"] {
+        width: 100%;
+    }
+}
+
+.services {
+    padding: 200px 50px 50px 50px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.43);
+    display: FLEX;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.services h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(0, 204, 109);
+    text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
+    position: relative;
+
+}
+
+.services .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.services .card {
+    box-shadow: 0px 0px 5px grey;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card p {
+    font-size: 16px;
+    color: white;
+}
+
+
+.contact {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.contact h2 {
+    color: rgb(0, 204, 109);
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.contact-box {
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(74, 76, 77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-box p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+
+}
+
+.contact-info input,
+.contact-info textarea {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+.contact-info input::placeholder,
+.contact-info textarea::placeholder {
+    color: #ffffff;
+}
+.contact-info textarea {
+    resize: none;
+}
+
+.contact-info input:focus,
+.contact-info textarea:focus {
+    outline: none;
+    border-color: rgb(0, 204, 109);
+}
+
+.contact-info button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 204, 109);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 150px;
+}
+
+.contact-info button:hover {
+    background-color: #fafafa;
+    color: rgb(0, 204, 109);
+    transform: translateY(-3px);
+}
+
+
+.questions {
+    padding: 50px;
+    background-color: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+    width: 50%;
+}
+
+.questions h3 {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(0, 204, 109);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: start;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.questions p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: start;
+    color: #cccccc;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3);
+    opacity: 0.4;
+}
+
+.questions h3:hover {
+    color: rgb(0, 204, 109);
+    text-decoration: underline;
+}
+
+
+.team {
+    padding: 50px;
+    text-align: left;
+    background-color: black;
+    height: auto;
+    
+
+}
+
+.team h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: white;
+    text-shadow: 10px 10px 8px rgba(209, 43, 43, 0.3);
+    margin: 30px;
+}
+
+.team-member {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+    margin: 50px;
+    
+}
+
+.member {
+    position: relative;
+    border: 2px solid rgb(0, 204, 109);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow:  0px 0px 20px rgb(0, 204, 109);
+    text-align: center;
+    transition: transform 0.3s;
+    width: 300px;
+    height:auto;
+}
+
+
+.member img {
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow:  0px 0px 20px rgb(0, 204, 109);
+    transition: all 0.3s;
+}
+
+.member h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+   text-align: center;
+    transition: all 0.3s;
+}
+.member p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 204, 109);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.member:hover  {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a i {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a i:hover {
+    color: rgb(0, 204, 109);
+}
