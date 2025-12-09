@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="CodeZone - Your gateway to mastering coding skills with interactive courses and community support."
+    />
+    <meta
+      name="keywords"
+      content="CodeZone, coding courses, programming, learn to code, coding skills, interactive learning, coding community, coding certification"
+    />
+    <meta name="author" content="CodeZone Team" />
+    <link
+      href="https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.4/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/photos/icons8-code-48.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="wallet.css" />
+    <title>Wallet</title>
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><i class="bx bx-code-alt"></i> CodeZone</div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+
+    <div class="checkout-container">
+      <main class="checkout-form-section">
+        <h2 class="form-title">Checkout Details</h2>
+        <form target="_blank">
+          <fieldset>
+            <legend>Shipping Details</legend>
+            <lable for="full-name">Full Name</lable>
+            <input
+              id="full-name"
+              type="text"
+              name="full name"
+              placeholder="Full Name"
+              minlength="5"
+              maxlength="45"
+              required
+            />
+            <label for="contact-info">Contact Info (Email)</label>
+            <input
+              id="contact-info"
+              type="email"
+              name="Email"
+              placeholder="your.email@example.com"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment Details</legend>
+            <lable for="card">Card Information</lable>
+            <input
+              id="card"
+              type="text"
+              name="Card"
+              placeholder="1234 1234 1234 1234"
+              maxlength="16"
+            />
+            <div class="card-details-row">
+              <input
+                type="text"
+                name="Expire-Date"
+                placeholder="MM/YY"
+                maxlength="5"
+                style="width: 50%; margin-right: 10px"
+              />
+              <input
+                type="number"
+                placeholder="CVC"
+                name="cvc"
+                maxlength="4"
+                style="width: 45%"
+              />
+            </div>
+          </fieldset>
+
+          <button type="submit">Pay $199.00</button>
+        </form>
+      </main>
+
+      <aside class="order-summary-section">
+        <h2>Order Summary</h2>
+        <div class="summary-box">
+          <h3>Full Stack Course</h3>
+          <div class="course-details">
+            <p>
+              <strong>US $199.00</strong>
+            </p>
+            <p class="course-item">Front End Course</p>
+            <p class="course-item">Back End Course</p>
+            <hr class="summary-divider" />
+            <p class="total-due">Total Due: $199.00</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    margin-top: 200px;
+
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #111;
+    z-index: 9999;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: #2ecc71;
+}
+
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: #111;
+}
+
+.logo, .main-nav a.active-link {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.main-nav a {
+  color: #f0f0f0;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    gap: 30px;
+}
+
+.checkout-form-section, .order-summary-section {
+    padding: 25px;
+    border-radius: 8px;
+    background: #2a2a2a;
+}
+
+.checkout-form-section {
+    width: 65%;
+}
+
+.order-summary-section {
+    width: 35%;
+    height: fit-content;
+}
+
+h2, legend, .total-due {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+fieldset {
+  border: 1px solid #444;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #202020;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #1c1c1c; 
+  color: #f0f0f0;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.card-details-row {
+    display: flex;
+    gap: 4%;
+}
+.card-details-row input {
+    width: 48%;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #2ecc71;
+  color: #1c1c1c; 
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
