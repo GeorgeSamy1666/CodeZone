@@ -1,0 +1,53 @@
+/* Dark/Light Mode Styles */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #343a40;
+        --text-color: white;
+        --primary-color: #0056b3;
+        --secondary-color: #5a6268;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add gradients */
+.login-container {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .login-container {
+        padding: 30px;
+    }
+}
+
+/* Animation for transitions */
+input {
+    border: 1px solid var(--primary-color);
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+} 
