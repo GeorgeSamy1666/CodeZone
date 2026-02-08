@@ -1,43 +1,71 @@
-.light-theme {
-    --background-color: #ffffff;
-    --text-color: #333333;
-    --link-color: #1a73e8;
+.index.css
+
+/* Dark and Light Mode Variables */
+:root {
+    --background-color: #ffffff; /* Light mode */
+    --text-color: #000000;
+    --primary-color: #6200ea;
 }
 
-.dark-theme {
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --link-color: #bb86fc;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212; /* Dark mode */
+        --text-color: #ffffff;
+        --primary-color: #bb86fc;
+    }
 }
 
+/* Body styles */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    transition: background-color 0.5s ease, color 0.5s ease;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a {
-    color: var(--link-color);
-    transition: color 0.3s ease;
+/* Button styles */
+button {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-a:hover {
-    color: lighten(var(--link-color), 10%);
+button:hover {
+    background: rgba(98, 0, 234, 0.7);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 10px 0;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+.fade-in {
+    animation: fadeIn 1s ease-in;
 }
 
+/* Gradients */
+.header {
+    background: linear-gradient(90deg, rgba(98, 0, 234, 1) 0%, rgba(255, 82, 82, 1) 100%);
+    padding: 20px;
+    color: white;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .container {
-        padding: 0 1rem;
+    body {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
     }
 }
