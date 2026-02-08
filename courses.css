@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #3498db; /* Light Mode */
+    --secondary-color: #2ecc71;
+    --background-color: #ffffff;
+    --text-color: #34495e;
+    --primary-color-dark: #2980b9; /* Dark Mode */
+    --secondary-color-dark: #27ae60;
+    --background-color-dark: #34495e;
+    --text-color-dark: #ecf0f1;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+/* Modern Gradients for Buttons */
+.button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Responsive Design */
+@media (max-width: 374px) {
+    /* Mobile Styles */
+}
+
+@media (max-width: 480px) {
+    /* Small Phone Styles */
+}
+
+@media (max-width: 810px) {
+    /* Tablet Styles */
+}
+
+@media (min-width: 1024px) {
+    /* Desktop Styles */
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle {
+    cursor: pointer;
+}
+
+/* Improved Card Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Loader Animations */
+.loader {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-left-color: #fff;
+    animation: spin 1s linear infinite;
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .slideUp, .fadeIn, .scaleUp {
+        animation: none;
+    }
+}
